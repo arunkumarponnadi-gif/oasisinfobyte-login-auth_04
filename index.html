@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Premium Login Authentication</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h1>
+            Login System
+        </h1>
+
+        <!-- INPUTS -->
+
+        <div class="input-group">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+            >
+
+            <!-- PASSWORD -->
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                >
+
+                <span
+                class="toggle-password"
+                onclick="togglePassword()"
+                >
+                    👁
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- FORGOT PASSWORD -->
+
+        <p
+        class="forgot-password"
+        onclick="forgotPassword()"
+        >
+            Forgot Password?
+        </p>
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+
+            <button onclick="register()">
+                Register
+            </button>
+
+            <button onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+        <!-- MESSAGE -->
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

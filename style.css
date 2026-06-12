@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+
+    background:
+    radial-gradient(circle at top left,#7c3aed,transparent 30%),
+    radial-gradient(circle at bottom right,#2563eb,transparent 30%),
+    #0f172a;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.form-box{
+    width: 400px;
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.form-box h1{
+    text-align: center;
+    margin-bottom: column;
+    font-size: 38px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-group input{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    background: rgb(255, 255, 255,0.1);
+    color: white;
+}
+.input-group input::placeholder{
+    color: #ddd;
+}
+.password-box{
+    position: relative;
+    width: 100%;
+}
+.toggle-password{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+.forgot-password{
+    margin-top: 15px;
+    text-align: right;
+    cursor: pointer;
+    color: #93c5fd;
+    transition: 0.3s;
+}
+.forgot-password:hover{
+    color: white;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.buttons button{
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.buttons button:first-child{
+    background: #22c55e;
+    color: white;
+}
+.buttons button :last-child{
+    background: #2563eb;
+    color: white;
+}
+.buttons button:hover{
+    transform: translateY(-3px);
+}
+#message{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #facc15;
+}
+@media(max-width:500px){
+    .form-box{
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+}
